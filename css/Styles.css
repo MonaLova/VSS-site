@@ -1,0 +1,231 @@
+.testbtn{
+    background-color: rgba(243, 235, 125, 0.986);
+    
+}
+
+
+body {
+    background-color: rgba(15, 14, 11, 0.452);
+    background-image: url("../media/mohamed_hassan-pattern-2309660.png");
+    background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-position: center;
+        background-size: cover;
+        background-origin: border-box;
+        margin: auto;
+        left: 0px;
+        top: 0px;
+        z-index: 0;
+        text-align: right;
+    
+}
+
+
+
+.content-container {
+    max-width: 600px;
+
+}
+
+h1 {
+    border-color: rgba(136, 122, 41, 0);
+    border-width: 5px 10px;
+    border-radius: 12px;
+    text-align: right;
+    color: rgba(247, 0, 0, 0.582);
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.2) ;
+}
+
+ul {
+    border: inset;
+    border-color: rgb(219, 177, 59);
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #8b0606;
+    position: sticky;
+    top: 0; z-index: 100;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 15px;
+}
+
+ul li a {
+    display: block;
+    color: rgb(17, 16, 16);
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+ul li a:hover {
+    background-color: #a82626;
+}
+
+footer{
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+    left: -10px;
+    text-align: right;
+    padding: 10px 0;
+    z-index: 100;
+}
+p{
+    margin-left: 160px;
+    top: 0;
+    text-align: right;
+}
+
+.dropdown {
+    position: relative;
+}
+
+.dropbtn {
+    background-color:#4caf50;
+    color:white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 200px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+.dropdown-content a {
+    color: black;
+    padding:12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {
+    background-color: #f1f1f1;
+}
+
+.dropdown:hover .dropdown-content {
+    display:block
+}
+
+.dropdown:hover  .dropbtn {
+    background-color: #ffffff50;
+}
+
+nav ul,
+nav ol,
+nav li {
+    margin:0;
+    padding: 0;
+    float: left;
+}
+nav a {
+    display: block;
+    padding: 1em;
+    text-decoration: none;
+    color: #d0d0d0;
+}
+nav ul ul {
+    max-width: 11em;
+    background-color: #e22424;
+}
+nav ul ul li { 
+    width:100%
+}
+
+nav ul ul {
+    max-width: 11em;
+    background-color: #af2020;
+    position: absolute;
+    z-index: 99;
+    display: none;
+}
+
+nav li:hover ul {
+    display: block;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    background-color: rgba(250, 235, 215, 0);
+    padding: 5px;
+    gap: 5px;
+}
+.container div{
+    background-color: #f1f1f100;
+    color: #4caf50;
+    padding: 10px;
+    font-size: 30px;
+    align-content: center;
+    margin: 40px;
+}
+
+/*.container div.Packs{
+    grid-area: auto;
+    text-align: center;
+}
+
+
+.container {
+    background-color: #f2f2f2af;
+    padding: 5px 20px 15px 20px;
+    border: 1px solid lightgrey;
+    border-radius: 3px;
+}
+
+.container div a img {
+    width: 100%;
+    height: auto;
+}
+*/
+input[type=text]{
+    width: 100%;
+    margin-bottom: 20px;
+    padding: 12px;
+    border: 1px solid #cccccc7a;
+    border-radius: 3px
+}
+
+label{
+    margin-bottom: 20px;
+    padding: 7px 0;
+    font-size: 24px;
+}
+
+.btn {
+    background-color: #04aa6d;
+    color: rgba(255, 255, 255, 0.459);
+    padding: 12px;
+    margin: 10px 0;
+    border: none;
+    width: 100%;
+    border-radius: 3px;
+    cursor: pointer;
+    font-size: 17px;
+}
+
+.btn:hover {
+    background-color: #f1f1f16b;
+}
+
+span.price {
+    float: right;
+    color: grey;
+}
+
+@media (max-width: 800px){
+    .row{
+        flex-direction: column-reverse;
+    }
+    .col-25 {
+        margin-bottom: 20px;
+    }
+}
+
