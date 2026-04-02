@@ -31,9 +31,18 @@ h1 {
     border-color: rgba(136, 122, 41, 0);
     border-width: 5px 10px;
     border-radius: 12px;
-    text-align: right;
-    color: rgba(247, 0, 0, 0.582);
-    text-shadow: 2px 2px 4px rgba(0,0,0,0.2) ;
+    text-align: center;
+    color: rgb(231, 32, 32);
+    text-shadow: 4px -3px 3px rgba(0,0,0,0.5);
+    font-size: 60px;
+}
+
+#subtitle {
+    color: rgba(29, 37, 146, 0.87);
+    font-weight: bold;
+    text-align: left;
+    font-size: 30px;
+    margin-left: 40px;
 }
 
 ul {
@@ -60,10 +69,6 @@ ul li a {
     text-decoration: none;
 }
 
-ul li a:hover {
-    background-color: #a82626;
-}
-
 footer{
     position: fixed;
     width: 100%;
@@ -73,14 +78,9 @@ footer{
     padding: 10px 0;
     z-index: 100;
 }
-p{
-    margin-left: 160px;
-    top: 0;
-    text-align: right;
-}
 
 .dropdown {
-    position: relative;
+    /*position: relative;*/
 }
 
 .dropbtn {
@@ -94,10 +94,12 @@ p{
 
 .dropdown-content {
     display: none;
-    position: absolute;
-    background-color: #f9f9f9;
+    position:absolute; 
+    right: 0px;
+    background-color: #f9f9f98c;
     min-width: 200px;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    
 }
 .dropdown-content a {
     color: black;
@@ -107,7 +109,7 @@ p{
 }
 
 .dropdown-content a:hover {
-    background-color: #f1f1f1;
+    background-color: #4caf50;
 }
 
 .dropdown:hover .dropdown-content {
@@ -115,7 +117,7 @@ p{
 }
 
 .dropdown:hover  .dropbtn {
-    background-color: #ffffff50;
+    background-color: #4caf50;
 }
 
 nav ul,
@@ -131,10 +133,7 @@ nav a {
     text-decoration: none;
     color: #d0d0d0;
 }
-nav ul ul {
-    max-width: 11em;
-    background-color: #e22424;
-}
+
 nav ul ul li { 
     width:100%
 }
@@ -149,13 +148,14 @@ nav ul ul {
 
 nav li:hover ul {
     display: block;
-}
+} 
 
 .container {
     display: grid;
     grid-template-columns: auto auto auto;
-    background-color: rgba(250, 235, 215, 0);
-    padding: 5px;
+    background-color: #f2f2f2af;
+    padding: 5px 20px 15px 20px;
+    border: 1px solid lightgrey;
     gap: 5px;
 }
 .container div{
@@ -167,24 +167,7 @@ nav li:hover ul {
     margin: 40px;
 }
 
-/*.container div.Packs{
-    grid-area: auto;
-    text-align: center;
-}
 
-
-.container {
-    background-color: #f2f2f2af;
-    padding: 5px 20px 15px 20px;
-    border: 1px solid lightgrey;
-    border-radius: 3px;
-}
-
-.container div a img {
-    width: 100%;
-    height: auto;
-}
-*/
 input[type=text]{
     width: 100%;
     margin-bottom: 20px;
@@ -215,10 +198,7 @@ label{
     background-color: #f1f1f16b;
 }
 
-span.price {
-    float: right;
-    color: grey;
-}
+
 
 @media (max-width: 800px){
     .row{
@@ -229,3 +209,7 @@ span.price {
     }
 }
 
+img {
+    max-width:100%;
+    height: auto;
+}
